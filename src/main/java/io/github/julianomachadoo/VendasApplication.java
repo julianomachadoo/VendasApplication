@@ -2,24 +2,10 @@ package io.github.julianomachadoo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class VendasApplication {
-
-//    @Bean
-//    public CommandLineRunner init(
-//            @Autowired ClienteRespository clienteRespository,
-//            @Autowired ProdutoRespository produtoRespository
-//    ) {
-//        return args -> {
-//            System.out.println("Salvando clientes");
-//            Cliente fulano = new Cliente("Fulano", "111.111.111-11");
-//            clienteRespository.save(fulano);
-//
-//            Produto p = new Produto("Celular", 500.00);
-//            produtoRespository.save(p);
-//        };
-//    }
+public class VendasApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
 
